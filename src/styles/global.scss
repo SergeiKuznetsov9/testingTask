@@ -19,6 +19,7 @@
   --font-weight-s: 400;
   --font-weight-m: 500;
 
+  //   fonts
   --header-font-desktop: var(--font-weight-m) var(--font-size-2xl) /
     var(--font-height-xl) var(--font-family-main);
   --main-font-desktop: var(--font-weight-s) var(--font-size-s) /
@@ -46,7 +47,7 @@
 
   --header-popup: var(--font-weight-m) var(--font-size-l) / var(--font-height-m)
     var(--font-family-main);
-  --input-placeholder: var(--font-weight-m) var(--font-size-2xs) /
+  --input-placeholder: var(--font-weight-m) var(--font-size-s) /
     var(--font-height-xs) var(--font-family-main);
   --checkbox-hint: var(--font-weight-s) var(--font-size-s) /
     var(--font-height-xs) var(--font-family-main);
@@ -54,4 +55,7 @@
     var(--font-height-s) var(--font-family-main);
   --button-popup: var(--font-weight-m) var(--font-size-s) / var(--font-height-s)
     var(--font-family-main);
+
+  // colors
+  --popup-background-color: #f0f4fc;
 }

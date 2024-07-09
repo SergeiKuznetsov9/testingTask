@@ -1,0 +1,66 @@
+@import "./global.scss";
+
+.popup {
+  width: 500px;
+  height: 575px;
+  padding: 24px;
+  background-color: var(--popup-background-color);
+
+  .popup-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .popup-closeButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: end;
+      width: 52px;
+      height: 52px;
+      margin-bottom: 4px;
+      background-color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition-property: background-color;
+      transition-duration: 0.3s;
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+
+      &:active {
+        background-color: #dbdbdb;
+      }
+    }
+
+    .popup-header {
+      font: var(--header-popup);
+      color: #323232;
+      margin-bottom: 18px;
+    }
+
+    .popup-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 24px;
+
+      .popup-input {
+        width: 100%;
+        height: 73px;
+        padding: 24px;
+        background-color: #d7e2f6;
+        border: none;
+        border-radius: 10px;
+
+        &::placeholder {
+          font: var(--input-placeholder);
+          color: #1f4284;
+        }
+      }
+    }
+  }
+}

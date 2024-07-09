@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="../dist/index.css" />
   </head>
   <body>
-    <div id="root">Main</div>
+    <div id="root">
+      <div class="popup">
+        <form class="popup-form">
+          <button type="button" class="popup-closeButton">
+            <img src="../assets/icons/x.png" />
+          </button>
+          <h2 class="popup-header">Войти в систему</h2>
+          <div class="popup-inputs">
+            <input
+              type="text"
+              placeholder="Email/Телефон"
+              class="popup-input"
+            />
+            <input type="password" placeholder="Пароль" class="popup-input" />
+          </div>
+          <input type="checkbox" class="popup-checkbox" />
+          <button type="button" class="popup-textButton">Восстановить</button>
+          <button type="button" class="popup-submitButton">Войти</button>
+          <button type="button" class="popup-regButton">
+            Зарегистрироваться
+          </button>
+        </form>
+      </div>
+    </div>
     <script src="../dist/index.js"></script>
   </body>
 </html>
