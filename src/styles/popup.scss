@@ -23,7 +23,6 @@
       background-color: #ffffff;
       border: none;
       border-radius: 10px;
-      cursor: pointer;
       transition-property: background-color;
       transition-duration: 0.3s;
 
@@ -51,6 +50,7 @@
       .popup-input {
         width: 100%;
         height: 73px;
+        font: var(--input-placeholder);
         padding: 24px;
         background-color: #d7e2f6;
         border: none;
@@ -59,6 +59,89 @@
         &::placeholder {
           font: var(--input-placeholder);
           color: #1f4284;
+        }
+      }
+    }
+
+    .popup-memoCheckbox {
+      display: flex;
+      font: var(--checkbox-hint);
+      gap: 14px;
+      margin-bottom: 24px;
+
+      .popup-memoCheckboxInput {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        border: 2px solid #323232;
+
+      }
+
+      .popup-memoCheckboxLabel {
+        cursor: pointer;
+        color: #323232;
+
+      }
+    }
+
+    .popup-textButton {
+      align-self: start;
+      border: 0;
+      font: var(--text-button-popup);
+      color: #244C98;
+      background-color: var(----popup-background-color);
+      transition-property: font-size color;
+      transition-duration: .3s;
+      margin-bottom: 36px;
+
+      &:hover {
+        font-size: 20.5px;
+      }
+
+      &:active {
+        color: #3067cd;
+      }
+    }
+
+    .popup-buttonsBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .popup-submitButton {
+        height: 65px;
+        font: var(--button-popup);
+        color: #FFFFFF;
+        background-color: #244C98;
+        border-radius: 4px;
+        border: none;
+        transition-property: background-color;
+        transition-duration: .3s;
+
+        &:hover {
+          background-color: #22488f;
+        }
+
+        &:active {
+          background-color: #244C98;
+        }
+
+      }
+
+      .popup-regButton {
+        height: 65px;
+        font: var(--button-popup);
+        color: #244C98;
+        border: solid 1px #244C98;
+        border-radius: 4px;
+        background-color: var(--popup-background-color);
+
+        &:hover {
+          background-color: #e2e6ee;
+        }
+
+        &:active {
+          background-color: var(--popup-background-color);
         }
       }
     }

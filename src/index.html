@@ -16,18 +16,36 @@
           <h2 class="popup-header">Войти в систему</h2>
           <div class="popup-inputs">
             <input
+              name="contact"
               type="text"
               placeholder="Email/Телефон"
               class="popup-input"
             />
-            <input type="password" placeholder="Пароль" class="popup-input" />
+            <input
+              name="password"
+              type="password"
+              placeholder="Пароль"
+              class="popup-input"
+            />
           </div>
-          <input type="checkbox" class="popup-checkbox" />
+          <div class="popup-memoCheckbox">
+            <input
+              name="isRemember"
+              type="checkbox"
+              id="memoCheckbox"
+              class="popup-memoCheckboxInput"
+            />
+            <label for="memoCheckbox" class="popup-memoCheckboxLabel"
+              >Запомнить пароль</label
+            >
+          </div>
           <button type="button" class="popup-textButton">Восстановить</button>
-          <button type="button" class="popup-submitButton">Войти</button>
-          <button type="button" class="popup-regButton">
-            Зарегистрироваться
-          </button>
+          <div class="popup-buttonsBlock">
+            <button type="submit" class="popup-submitButton">Войти</button>
+            <button type="button" class="popup-regButton">
+              Зарегистрироваться
+            </button>
+          </div>
         </form>
       </div>
     </div>
