@@ -1,7 +1,11 @@
 @import "./reset.scss";
+@import "./fonts.scss";
+@import "./global.scss";
 
 #root {
   width: 100px;
   height: 100px;
   background-color: green;
+
+  font: var(--header-font-desktop);
 }
