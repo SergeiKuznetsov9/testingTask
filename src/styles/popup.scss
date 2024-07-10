@@ -1,13 +1,17 @@
-@import "./variables.scss";
+.noDisplay {
+  display: none;
+}
+
+.display {
+  display: flex;
+}
 
 .popup {
-  display: none;
   position: fixed;
   top: 0;
   height: 100vh;
   width: 100vw;
   background-color: #00000066;
-  // display: flex;
   align-items: center;
   justify-content: center;
 
