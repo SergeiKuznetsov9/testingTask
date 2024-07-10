@@ -14,11 +14,11 @@
 }
 
 .mainPart {
-  background-color: #EBF0FA;
+  background-color: #ebf0fa;
   flex-grow: 1;
   display: flex;
   align-items: center;
-  font-family: 'manrope';
+  font-family: "manrope";
   padding-left: 72px;
   padding-right: 72px;
 
@@ -27,7 +27,7 @@
 
     h1 {
       font: var(--header-font-desktop);
-      color: #1F4284;
+      color: #1f4284;
       margin-bottom: 18px;
     }
 
@@ -41,42 +41,41 @@
       width: 341px;
       height: 68px;
       padding: 12px 12px 12px 24px;
-      background-color: #244C98;
+      background-color: #244c98;
       border: none;
       border-radius: 60px;
       font: var(--button-font-desktop);
-      color: #FFFFFF;
+      color: #ffffff;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 48px;
       transition-property: background-color;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
 
       &:hover {
-        background-color: #204588
+        background-color: #204588;
       }
 
       &:active {
-        background-color: #244C98
+        background-color: #244c98;
       }
 
       .mainButtonImage {
         width: 40px;
         height: 40px;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
       }
     }
-
   }
 }
 
 .imagePart {
-  background-image: url('../assets/images/main.png');
+  background-image: url("../assets/images/main.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -107,16 +106,18 @@
 
 @media (max-width: 1100px) {
   .root {
-
     max-height: unset;
     padding: 24px;
     flex-direction: column;
+    justify-content: center;
   }
 
   .mainPart {
     padding: 24px;
+    flex-grow: unset;
 
     .greeting {
+      max-width: unset;
 
       h1 {
         font: var(--header-font-tablet);
@@ -140,5 +141,41 @@
   .imagePart {
     width: 100%;
     min-height: 430px;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagePart {
+    width: 100%;
+    max-height: 360px;
+    min-height: unset;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 475px) {
+  .mainPart {
+    padding: 24px 24px 18px;
+
+    .greeting {
+      h1 {
+        font: var(--header-font-mobile);
+        margin-bottom: 14px;
+      }
+
+      p {
+        font: var(--main-font-mobile);
+        margin-bottom: 18px;
+      }
+
+      .mainButton {
+        font: var(--button-font-mobile);
+      }
+    }
+  }
+
+  .imagePart {
+    max-height: 220px;
   }
 }
